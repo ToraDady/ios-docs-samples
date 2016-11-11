@@ -1,0 +1,61 @@
+PODS:
+  - "!ProtoCompiler (3.0.2)":
+    - Protobuf (~> 3.0)
+  - "!ProtoCompiler-gRPCPlugin (1.0.1-pre1)":
+    - "!ProtoCompiler (= 3.0.2)"
+    - gRPC-ProtoRPC (= 1.0.1-pre1)
+  - BoringSSL (7.0):
+    - BoringSSL/Implementation (= 7.0)
+    - BoringSSL/Interface (= 7.0)
+  - BoringSSL/Implementation (7.0):
+    - BoringSSL/Interface (= 7.0)
+  - BoringSSL/Interface (7.0)
+  - googleapis (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)"
+    - googleapis/Messages (= 0.0.1)
+    - googleapis/Services (= 0.0.1)
+  - googleapis/Messages (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)"
+    - Protobuf
+  - googleapis/Services (0.0.1):
+    - "!ProtoCompiler-gRPCPlugin (~> 1.0.0-pre1.1)"
+    - googleapis/Messages
+    - gRPC-ProtoRPC
+  - gRPC (1.0.1-pre1):
+    - gRPC-Core (= 1.0.1-pre1)
+    - gRPC-RxLibrary (= 1.0.1-pre1)
+  - gRPC-Core (1.0.1-pre1):
+    - gRPC-Core/Implementation (= 1.0.1-pre1)
+    - gRPC-Core/Interface (= 1.0.1-pre1)
+  - gRPC-Core/Implementation (1.0.1-pre1):
+    - BoringSSL (~> 7.0)
+    - gRPC-Core/Interface (= 1.0.1-pre1)
+  - gRPC-Core/Interface (1.0.1-pre1)
+  - gRPC-ProtoRPC (1.0.1-pre1):
+    - gRPC (= 1.0.1-pre1)
+    - gRPC-RxLibrary (= 1.0.1-pre1)
+    - Protobuf (~> 3.0)
+  - gRPC-RxLibrary (1.0.1-pre1)
+  - Protobuf (3.1.0)
+
+DEPENDENCIES:
+  - googleapis (from `.`)
+
+EXTERNAL SOURCES:
+  googleapis:
+    :path: "."
+
+SPEC CHECKSUMS:
+  "!ProtoCompiler": cfad9cbe5299a4923b1c3c8f150818c91efd0b6d
+  "!ProtoCompiler-gRPCPlugin": 0b619456c00987df061a7b4dc8a337b417ef2c29
+  BoringSSL: 50035b9d9eeff5529587311782fc57c00ebf13ae
+  googleapis: daa20dca7a0097c6c3316fdfd888e0ba1b7c8921
+  gRPC: 0724189f56f21163707c1d0e72edbad9d9d3e57e
+  gRPC-Core: 859a514dd9249cac77e9463f725c923cb5643140
+  gRPC-ProtoRPC: 7f53d24335a9b8893478f9b3b4e75eaff87e0e18
+  gRPC-RxLibrary: 70c0ffcd326344793ffb060898c3a3aec362a996
+  Protobuf: 265e9977d04a83eba9cefb0bed3ad07e41033b4a
+
+PODFILE CHECKSUM: 3997a4f9b2a8d698c6e8ad9b60b9838db41525ed
+
+COCOAPODS: 1.1.1
